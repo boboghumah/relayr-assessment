@@ -1,4 +1,4 @@
-gmodule.exports = {
+module.exports = {
     'Validate that the search field autosuggestion feature displays matching keywords': function (browser) {
         browser
             .url('https://google.com/')
@@ -6,7 +6,7 @@ gmodule.exports = {
             .waitForElementVisible('input.gsfi', 1000)
             .setValue('input.gsfi', 'quality assurance')
             .waitForElementVisible('ul[role=listbox]', 1000)
-            .assert.containsText('ul[role=listbox]', 'quality assurance')
+            .assert.containsText('ul[role=listbox]', 'quality assurance');
         },
         
         'Validate that Search result displays relevant search result and a correct page title': function (browser) {
