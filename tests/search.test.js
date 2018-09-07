@@ -9,7 +9,7 @@ module.exports = {
             .assert.containsText('ul[role=listbox]', 'quality assurance');
         },
         
-        'Validate that Search result displays relevant search result and a correct page title': function (browser) {
+        'Validate that the Search result displays relevant search result and a correct page title': function (browser) {
             browser
             .url('https://google.com/')
             .waitForElementVisible('body', 1000)
