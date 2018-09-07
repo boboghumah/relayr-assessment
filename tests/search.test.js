@@ -23,3 +23,5 @@ module.exports = {
             .end();
     }
 };
+
+// I would have used a Page Object Model design pattern to design the test to avoid code duplication.
